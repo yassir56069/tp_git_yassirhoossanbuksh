@@ -5,8 +5,13 @@ import sys
 def main():
 	a = (sys.argv[1])
 	b = (sys.argv[2])
+	if sys.argv[1] == "":
+		a = input("Enter The Value Of The First Argument: ")
+	if sys.argv[2] == "":
+		b = input("Enter The Value Of The Second Argument: ")
 
-	if (sys.argv[3] != ""):  #if it exists
+
+	if sys.argv[3] != "":  #if it exists
 		print("error! more than 2 arguments given..")
 	else:
 		add(a,b)
